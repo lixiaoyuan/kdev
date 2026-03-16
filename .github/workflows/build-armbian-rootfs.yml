@@ -15,10 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Debian 11 (oldstable, EOL ～2026)
-          - set_release: bullseye
-            set_desktop: mini
-
+         
           # Debian 12 (stable)
           - set_release: bookworm
             set_desktop: mini
@@ -26,59 +23,6 @@ jobs:
             set_desktop: gnome
           - set_release: bookworm
             set_desktop: xfce
-
-          # Debian 13 (testing)
-          - set_release: trixie
-            set_desktop: mini
-          - set_release: trixie
-            set_desktop: gnome
-          - set_release: trixie
-            set_desktop: xfce
-
-          # Debian 14 (unstable, future)
-          - set_release: forky
-            set_desktop: mini
-          - set_release: forky
-            set_desktop: gnome
-          - set_release: forky
-            set_desktop: xfce
-
-          # Ubuntu 20.04 LTS (standard support ended Apr 2025)
-          #          - set_release: focal
-          #            set_desktop: mini
-
-          # Ubuntu 22.04 LTS (supported until 2027)
-          - set_release: jammy
-            set_desktop: mini
-          - set_release: jammy
-            set_desktop: gnome
-          - set_release: jammy
-            set_desktop: xfce
-
-          # Ubuntu 24.04 LTS (current LTS, supported until 2029)
-          - set_release: noble
-            set_desktop: mini
-          - set_release: noble
-            set_desktop: gnome
-          - set_release: noble
-            set_desktop: xfce
-
-          # Ubuntu 24.10 (interim release, EOL Jul 2025)
-          #          - set_release: oracular
-          #            set_desktop: mini
-          #          - set_release: oracular
-          #            set_desktop: gnome
-          #          - set_release: oracular
-          #            set_desktop: xfce
-
-          # Ubuntu 25.04 (planned interim, Apr 2025)
-          - set_release: plucky
-            set_desktop: mini
-          - set_release: plucky
-            set_desktop: gnome
-          - set_release: plucky
-            set_desktop: xfce
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
