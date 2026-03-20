@@ -74,6 +74,9 @@ ls -alh ${WORKDIR}/rootfs/armbian.git
 
 cd ${WORKDIR}/rootfs/armbian.git
 git checkout main
+
+export COLUMNS=160
+
 ./compile.sh RELEASE=${set_release} \
   BOARD=nanopct6 \
   BRANCH=legacy \
