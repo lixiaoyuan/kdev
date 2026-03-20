@@ -78,7 +78,7 @@ git checkout main
   BOARD=nanopct6 \
   BRANCH=legacy \
   BUILD_MINIMAL=no \
-  BUILD_ONLY=default \
+  BUILD_ONLY=rootfs \
   HOST=armbian \
   ${BUILD_DESKTOP} \
   EXPERT=yes \
