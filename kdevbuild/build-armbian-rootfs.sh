@@ -76,7 +76,7 @@ cd ${WORKDIR}/rootfs/armbian.git
 git checkout main
 ./compile.sh RELEASE=${set_release} \
   BOARD=nanopct6 \
-  BRANCH=current \
+  BRANCH=legacy \
   BUILD_MINIMAL=no \
   BUILD_ONLY=default \
   HOST=armbian \
